@@ -1,0 +1,13 @@
+{
+  "name": "count-parentheses",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": {
+      "testMatch" : ["count-parentheses-js/test/performance.test.js"]
+    }
+  }
+}
