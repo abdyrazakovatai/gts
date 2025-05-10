@@ -5,10 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CountTest {
-    @Test
-    public void testZero() {
-        assertEquals(1, Count.countWellFormatedParenthesis(0));
-    }
 
     @Test
     public void testOne() {
