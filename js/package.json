@@ -6,8 +6,11 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": {
-      "testMatch" : ["count-parentheses-js/test/performance.test.js"]
-    }
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/performance.test.js"
+    ]
   }
 }
