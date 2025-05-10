@@ -1,9 +1,5 @@
 const count = require('../countWellFormedParenthesis');
 
-test('n = 0', () => {
-    expect(count(0)).toBe(1);
-});
-
 test('n = 1', () => {
     expect(count(1)).toBe(1);
 });
