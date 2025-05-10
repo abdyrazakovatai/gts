@@ -7,7 +7,6 @@ function countWellFormedParenthesis(n) {
             dp[i] += dp[j] * dp[i - 1 - j];
         }
     }
-    console.log(dp[n])
     return dp[n];
 }
 

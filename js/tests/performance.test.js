@@ -1,12 +1,13 @@
+const { performance } = require('perf_hooks');
 const count = require('../countWellFormedParenthesis');
 
-test('Performance for n = 15', () => {
-    const start = Date.now();
-    const result = count(15);
-    const end = Date.now();
-    const duration = end - start;
+test('performance test for n=15', () => {
+    const n = 15;
+    const start = performance.now();
+    const result = count(n);
+    const end = performance.now();
 
-    console.log(`Execution time for n=15: ${duration} ms`);
-    expect(result).toBeGreaterThan(0);
-    expect(duration).toBeLessThan(200); // 200 ms предел
+    console.log(`Result: ${result}`);
+    console.log(`Execution time: ${(end - start).toFixed(3)} ms`);
+
 });

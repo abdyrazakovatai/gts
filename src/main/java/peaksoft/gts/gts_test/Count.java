@@ -11,7 +11,6 @@ public class Count {
                 counts[i] += counts[j] * counts[i - j - 1];
             }
         }
-        System.out.println("Количество правильных скобочных последовательностей для " + n + " пар скобок: " + counts[n]);
         return counts[n];
     }
 }
