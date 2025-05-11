@@ -18,4 +18,5 @@ class PerformanceTest {
 
         assertTrue(end - start < 1_000_000); // < 1 миллисекунды (в наносекундах)
     }
+
 }
