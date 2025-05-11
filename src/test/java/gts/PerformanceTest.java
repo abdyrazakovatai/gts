@@ -1,4 +1,4 @@
-package peaksoft.gts.gts_test;
+package gts;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,9 +11,11 @@ class PerformanceTest {
         int result = Count.countWellFormatedParenthesis(15);
         long end = System.nanoTime();
 
-        System.out.println("Result: " + result);
-        System.out.println("Execution time (ms): " + (end - start) / 1_000_000.0);
+        double durationMs = (end - start) / 1_000_000.0;
 
-        assertTrue(end - start < 1_000_000_000); // < 1 сек
+        System.out.println("Result: " + result);
+        System.out.printf("Execution time (ms): %.6f%n", durationMs);
+
+        assertTrue(end - start < 1_000_000); // < 1 миллисекунды (в наносекундах)
     }
 }

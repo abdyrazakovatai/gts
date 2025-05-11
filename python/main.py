@@ -11,3 +11,4 @@ def countWellFormedParenthesis(nCouples: int) -> int:
 if __name__ == "__main__":
     n = 5
     result = countWellFormedParenthesis(n)
+    print("Количество правильных скобочных последовательностей для " + str(n) + " пар скобок: " + str(result));

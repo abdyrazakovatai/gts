@@ -11,3 +11,9 @@ function countWellFormedParenthesis(n) {
 }
 
 module.exports = countWellFormedParenthesis;
+
+if (require.main === module) {
+    const n = 5;
+    const result = countWellFormedParenthesis(n);
+    console.log(`Количество правильных скобочных последовательностей для ${n} пар скобок: ${result}`);
+}

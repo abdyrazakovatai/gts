@@ -1,4 +1,4 @@
-package peaksoft.gts.gts_test;
+package gts;
 
 import org.junit.jupiter.api.Test;
 
